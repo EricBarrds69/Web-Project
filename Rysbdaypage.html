@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="favicon.jpg">
 	<title>Reese's pieces</title>
 </head>
 <style>
@@ -32,35 +33,71 @@
 	}
 
 	.anik1 img{
-	 height: 200px;
-	 width: 200px;
-	 padding-top: 220px;
-	 padding-left: 230px;
+	 	height: 200px;
+	 	width: 200px;
+	 	padding-top: 220px;
+	 	padding-left: 230px;
 	}
 	
-	.container2{
-		background-image: url("Cont2.jpg");
-		background-size: 300px 400px;
-		background-repeat: no-repeat;
-		margin-top: 60px;
-		margin-left: 340px;
-		height: 600px;
+
+	.flip-card{
+  		background-color: transparent;
 		width: 300px;
+		height: 300px;
+		perspective: 1000px;
+		margin-top: 100px;
+		margin-left: 350px; 
 	}
 
-	.container2 h3{
-		padding-top: 50px;
-		padding-left: 85px;
+	.flip-card-inner{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		transition: transform 0.8s;
+		transform-style: preserve-3d;
 	}
 
-	.container2 p{
-		font-size: 25px;
+	.flip-card:hover .flip-card-inner{
+		transform: rotateY(180deg);
 	}
 
-	.container2 img{
-		height: 200px;
-	 	width: 200px;
-		padding-left: 200px;
+	.card-front, .card-back{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		-webkit-backface-visibility: hidden; 
+		backface-visibility: hidden;
+	}
+
+	.card-front{
+		background-color: #bbb;
+		color: black;
+	}
+
+	.card-back{
+		background-image: url("Cont4.jpg");
+		background-size: 300px 300px;
+		color: white;
+		transform: rotateY(180deg);
+	}
+
+	.card-back h3{
+		color: black;
+		padding-top: 10px;
+	}
+
+	.card-back p1{
+		color: black;
+		font-size: 20px;
+	}
+
+	.container2{
+		background-color: black;
+		height: 1000px;
+		width: 800px;
+		margin-top: 100px;
+		margin-left: 100px;
 	}
 </style>
  <body>
@@ -74,16 +111,26 @@
  			<img src="anikanik.jpg">
  		</div>
 
- 		<div class="container2">
- 			<h3>Happy Birthdi!!</h3>
- 			<center><p>so first of all happy 19th birthdi lods!! nyhahahaha<br> today is your special day, i wish you to be always rich, rich in the essence of being rich in <b>affection</b>, <b>love</b>, and <b>faith</b>. <br> </p>
- 			</center>
+ 	<div class="flip-card">
+  		<div class="flip-card-inner">
+    		<div class="card-front">
+      		<img src="anikanik4.jpg" alt="Avatar" style="width:300px;height:300px;">
+    		</div>
+    		<div class="card-back">
+ 			<h3>HAPPY BIRTDI BAB!!</h3>
+ 			<p1>It's been a long journey in your life, you're already 19?!<br>	
 
- 			<img src="anikanik2.jpg">
- 		</div>
+ 				<br>Happy birthday lods, always know ill be praying over you<br>
 
- 		
+ 				<br>I labs u nyahahaha</p>
+    		</div>
+  		</div>
+	</div>
+
+	<div class="container2">
+		<img src="">
+	</div>
+
  	</div>
-	
  </body>
 </html>
