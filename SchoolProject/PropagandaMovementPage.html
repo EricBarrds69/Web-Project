@@ -7,8 +7,9 @@
 </head>
 <style>
 	.navi{
-		position: sticky;
+		position: fixed;
 		top: 0px;
+		width: 1600px;
 	}
 
 	.navi ul{
@@ -51,11 +52,136 @@
 		font-size: 40px;
 	}
 
-	.container1 img{
+	.photocard img{
 		height: 600px;
 		width: 400px;
 		padding-top: 50px;
 		padding-left: 25px;
+	}
+
+	.paper img{
+		height: 500px;
+		width: 800px;
+		padding-left: 450px;
+		padding-bottom: -350px;
+		margin-top: -1000px;
+		margin-bottom: 70px;
+		margin-left: 20px;
+	}
+
+	.container2{
+		background-image: url("container2 bg.png");
+		background-repeat: no-repeat;
+		background-size: 1600px 800px;
+		height: 800px;
+		width: 1600px;
+	}
+
+	.flip-card{
+  		background-color: transparent;
+		width: 300px;
+		height: 300px;
+		perspective: 1000px;
+		padding-left: 650px; 
+		padding-top: 350px;
+	}
+
+	.flip-card-inner{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		transition: transform 0.8s;
+		transform-style: preserve-3d;
+	}
+
+	.flip-card-inner:hover{
+		transform: rotateY(180deg);
+	}
+
+	.card-front, .card-back{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		-webkit-backface-visibility: hidden; 
+		backface-visibility: hidden;
+		
+		box-sizing: border-box;
+	}
+
+	.card-front{
+		background-color: #bbb;
+		color: black;
+	}
+
+	.card-back{
+		background-image: url("filler.jpg");
+		background-size: 300px 300px;
+		color: white;
+		transform: rotateY(180deg);
+	}
+
+	.card-back h3{
+		color: black;
+		padding-top: 10px;
+	}
+
+	.card-back p1{
+		color: black;
+		font-size: 20px;
+	}
+
+	.flip-card2{
+  		background-color: transparent;
+		width: 300px;
+		height: 300px;
+		perspective: 1000px;
+		padding-left: 150px;
+		margin-top: -300px;
+	}
+
+	.flip-card-inner2{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		transition: transform 0.8s;
+		transform-style: preserve-3d;
+	}
+
+	.flip-card-inner2:hover{
+		transform: rotateY(180deg);
+	}
+
+	.card-front2, .card-back2{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		-webkit-backface-visibility: hidden; 
+		backface-visibility: hidden;
+		box-sizing: border-box;
+	}
+
+	.card-front2{
+		background-color: #bbb;
+		color: black;
+	}
+
+	.card-back2{
+		background-image: url("filler.jpg");
+		background-size: 300px 300px;
+		color: white;
+		transform: rotateY(180deg);
+	}
+
+	.card-back2 h3{
+		color: black;
+		padding-top: 10px;
+	}
+
+	.card-back2 p1{
+		color: black;
+		font-size: 20px;
 	}
 </style>
 <body>
@@ -70,7 +196,39 @@
 
 	<div class="container1">
 		<h1>Propaganda Movement</h1>
+
+		<div class="photocard">
 		<img src="Barcelona.jpg">
+		</div>
+
+		<div class="paper">
+			<img src="Container1 bg.jpg">
+		</div>
+
+	</div>
+
+	<div class="container2">
+		<div class="flip-card">
+  		<div class="flip-card-inner">
+    		<div class="card-front">
+      		<img src="">
+    		</div>
+    		<div class="card-back">
+ 			
+    		</div>
+  		</div>
+		</div>
+
+		<div class="flip-card2">
+  		<div class="flip-card-inner2">
+    		<div class="card-front2">
+      		<img src="">
+    		</div>
+    		<div class="card-back2">
+ 			
+    		</div>
+  		</div>
+		</div>
 	</div>
 </body>
 </html>
