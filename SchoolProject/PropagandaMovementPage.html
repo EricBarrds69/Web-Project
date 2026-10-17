@@ -82,7 +82,7 @@
 		width: 300px;
 		height: 300px;
 		perspective: 1000px;
-		padding-left: 650px; 
+		padding-left: 1150px; 
 		padding-top: 350px;
 	}
 
@@ -136,7 +136,7 @@
 		width: 300px;
 		height: 300px;
 		perspective: 1000px;
-		padding-left: 150px;
+		padding-left: 650px;
 		margin-top: -300px;
 	}
 
@@ -182,6 +182,58 @@
 	.card-back2 p1{
 		color: black;
 		font-size: 20px;
+
+	}.flip-card3{
+  		background-color: transparent;
+		width: 300px;
+		height: 300px;
+		perspective: 1000px;
+		padding-left: 150px;
+		margin-top: -300px;
+	}
+
+	.flip-card-inner3{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		transition: transform 0.8s;
+		transform-style: preserve-3d;
+	}
+
+	.flip-card-inner3:hover{
+		transform: rotateY(180deg);
+	}
+
+	.card-front3, .card-back3{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		-webkit-backface-visibility: hidden; 
+		backface-visibility: hidden;
+		box-sizing: border-box;
+	}
+
+	.card-front3{
+		background-color: #bbb;
+		color: black;
+	}
+
+	.card-back3{
+		background-image: url("filler.jpg");
+		background-size: 300px 300px;
+		color: white;
+		transform: rotateY(180deg);
+	}
+
+	.card-back3 h3{
+		color: black;
+		padding-top: 10px;
+	}
+
+	.card-back3 p1{
+		color: black;
+		font-size: 20px;
 	}
 </style>
 <body>
@@ -225,6 +277,17 @@
       		<img src="">
     		</div>
     		<div class="card-back2">
+ 			
+    		</div>
+  		</div>
+		</div>
+
+		<div class="flip-card3">
+  		<div class="flip-card-inner3">
+    		<div class="card-front3">
+      		<img src="">
+    		</div>
+    		<div class="card-back3">
  			
     		</div>
   		</div>
