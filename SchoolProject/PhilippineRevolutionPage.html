@@ -6,6 +6,14 @@
 	<title>Rizal's Legacy in the Digital Age</title>
 </head>
 <style>
+
+	.navi{
+		position: fixed;
+		top: 0px;
+		width: 1600px;
+		z-index: 1000;
+	}
+	
 	.navi ul{
 		list-style-type: none;
 		background-color: darkred;
@@ -29,6 +37,298 @@
 	.navi li{
 		float: left;
 	}
+
+	.container1 {
+		width: 1600px;
+		height: 700px;
+		background-image: url("PhRevobg.jpg");
+		background-repeat: no-repeat;
+		background-size: 1600px 700px;
+		margin-top: 10px;
+		margin-left: -10px;
+	}
+
+	.container1 h1{
+		margin: 0px;
+		padding-top: 20px;
+		text-align: center;
+	}
+
+	.container1 img{
+		padding-left: 550px;
+		padding-top: 30px;
+		height: 600px;
+		width: 500px;
+	}
+
+	.container1 h3{
+		width: 400px;
+		padding-left: 620px;
+		margin-top: -580px;
+	}
+
+	.container1 ol{
+		padding-left: 620px;
+	}
+
+	.container1 li{
+		padding-top: 50px;
+		font-size: 20px;
+	}
+
+	.container2{
+		height: 700px;
+		width: 1600px;
+		background-image: url("Phrevoc2bg.jpg");
+		background-repeat: no-repeat;
+		background-size: 1600px 700px;
+		margin-left: -10px;
+	}
+
+	.flip-card{
+  		background-color: transparent;
+		width: 300px;
+		height: 400px;
+		perspective: 1000px;
+		padding-left: 100px; 
+		padding-top: 150px;
+	}
+
+	.flip-card-inner{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		transition: transform 0.8s;
+		transform-style: preserve-3d;
+	}
+
+	.flip-card-inner:hover{
+		transform: rotateY(180deg);
+	}
+
+	.card-front, .card-back{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		-webkit-backface-visibility: hidden; 
+		backface-visibility: hidden;
+		
+		box-sizing: border-box;
+	}
+
+	.card-front{
+		background-image: url("Phrevocard.jpg");
+		background-repeat: no-repeat;
+		background-size: 300px 400px;
+		color: black;
+	}
+
+	.card-back{
+		background-image: url("cardp1bg.jpg");
+		background-size: 300px 400px;
+		color: white;
+		transform: rotateY(180deg);
+	}
+
+	.card-back h2{
+		color: black;
+		padding-top: 10px;
+	}
+
+	.card-back h6{
+		color: black;
+		font-size: 20px;
+	}
+
+	.container2 img{
+		width: 1000px;
+		height: 500px;
+		padding-left: 500px;
+		margin-top: -550px;
+	}
+
+	.container2 p{
+		width: 800px;
+		height: 400px;
+		font-size: 25px;
+		padding-left: 550px;
+		margin-top: -430px;
+	}
+
+	.container3{
+		background-image: url("Phrevoc3bg.jpg");
+		background-repeat: no-repeat;
+		background-size: 1600px 700px;
+		height: 700px;
+		width: 1600px;
+	}
+
+	.container3 h1{
+		margin-top: 0px;
+		padding-top: 20px;
+		text-align: center;
+
+	}
+
+	.flip-card2{
+  		background-color: transparent;
+		width: 500px;
+		height: 600px;
+		perspective: 1000px;
+		padding-left: 1000px; 
+		padding-top: px;
+	}
+
+	.flip-card-inner2{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		transition: transform 0.8s;
+		transform-style: preserve-3d;
+	}
+
+	.flip-card-inner2:hover{
+		transform: rotateY(180deg);
+	}
+
+	.card-front2, .card-back2{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		-webkit-backface-visibility: hidden; 
+		backface-visibility: hidden;
+		
+		box-sizing: border-box;
+	}
+
+	.card-front2{
+		background-image: url("Phrevoc3paper.jpg");
+		background-repeat: no-repeat;
+		background-size: 500px 600px;
+		color: black;
+	}
+
+	.card-front2 ul{
+		padding-top: 40px;
+	}
+
+	.card-front2 li{
+		padding-top: 20px;
+		font-size: 20px;
+	}
+
+	.card-back2{
+		background-image: url("cardp1bg.jpg");
+		background-size: 500px 600px;
+		color: white;
+		transform: rotateY(180deg);
+	}
+
+	.card-back2 p{
+		color: black;
+		font-size: 20px;
+	}	
+
+	.card-back2 ul{
+		padding-top: 10px;
+	}
+
+	.card-back2 li{
+		color: black;
+		font-size: 16px;
+	}	
+
+	.flip-card3{
+  		background-color: transparent;
+		width: 500px;
+		height: 600px;
+		perspective: 1000px;
+		padding-left: 100px; 
+		margin-top: -600px;
+	}
+
+	.flip-card-inner3{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		transition: transform 0.8s;
+		transform-style: preserve-3d;
+	}
+
+	.flip-card-inner3:hover{
+		transform: rotateY(180deg);
+	}
+
+	.card-front3, .card-back3{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		-webkit-backface-visibility: hidden; 
+		backface-visibility: hidden;
+		
+		box-sizing: border-box;
+	}
+
+	.card-front3{
+		background-image: url("Phrevoc3paper.jpg");
+		background-repeat: no-repeat;
+		background-size: 500px 600px;
+		color: black;
+	}
+
+	.card-front3 ul{
+		padding-top: 40px;
+	}
+
+	.card-front3 li{
+		padding-top: 20px;
+		font-size: 20px;
+	}
+
+	.card-back3{
+		background-image: url("cardp1bg.jpg");
+		background-size: 500px 600px;
+		color: white;
+		transform: rotateY(180deg);
+	}
+
+	.card-back3 p{
+		color: black;
+		font-size: 20px;
+	}	
+
+	.card-back3 ul{
+		padding-top: 10px;
+	}
+
+	.card-back3 li{
+		color: black;
+		font-size: 16px;
+	}	
+
+	.container4{
+		background-image: url("Phrevoc4bg.jpg");
+		background-repeat: no-repeat;
+		background-size: 1600px 700px;
+		width: 1600px;
+		height: 700px;
+	}
+
+	.container4 h1{
+		margin-top: 0px;
+		padding-top: 50px;
+	}
+
+	.container4 p{
+		margin-top: 0px;
+		padding-top: 20px;
+		padding-left: 400px;
+		text-align: center;
+		font-size: 30px;
+	}
 </style>
 <body>
 	<nav class="navi">
@@ -39,5 +339,113 @@
 			<li><a href="PhilippineRevolutionPage.html">Philippine Revolution</a></li>
 		</ul>
 	</nav>
+
+	<div class="container1">
+		<h1>Ang Sigaw ng Pugad Lawin</h1>
+		<img src="Phrevopaper.jpg">
+		<h3>The Philippine Revolution of 1896 was the culmination of centuries of Spanish colonial rule, triggered by deep economic exploitation, social stratification, religious abuses, and the failure of peaceful reform efforts.</h3>
+
+		<ol>
+			<li>Centuries of Colonial Abuse and Friar Hegemony</li>
+			<li>Execution of Gomburza (1872)</li>
+			<li>Failure of the Propaganda Movement</li>
+			<li>Collapse of La Liga Filipina and Rizal’s Exile</li>
+		</ol>
+	</div>
+
+	<div class="container2">
+		<div class="flip-card">
+  		<div class="flip-card-inner">
+    		<div class="card-front">
+      		
+    		</div>
+    		<div class="card-back">
+ 			<h2>Andres Bonifacio</h2>
+ 			<h6>Role in The Katipunan:<br> Founder and The Supremo</h6>
+ 			<h6>Following the failure of peaceful reform efforts and the arrest of Dr. José Rizal in July 1892, Bonifacio recognized that independence could only be achieved through armed revolt. On July 7, 1892, he co-founded the secret society known as the Katipunan (KKK).</h6>
+    		</div>
+  		</div>
+		</div>
+		<div>
+		<img src="Phrevoc2paper.jpg">
+		<div class="papers">
+		<p>The Katipunan played a crucial role in the Philippine Revolution by serving as the primary organizational engine and ideological force that transformed the national struggle from a movement for peaceful reform into a unified, armed fight for total independence. Founded secretly on July 7, 1892, by Andrés Bonifacio and his associates following the collapse of La Liga Filipina, the secret society mobilized the masses across Luzon by using local languages and spreading revolutionary literature through its newspaper, Kalayaan. Beyond functioning as a military force, the Katipunan operated as a structured shadow government with central, provincial, and local councils, allowing it to seamlessly direct the simultaneous uprisings across central provinces after the Cry of Pugad Lawin in August 1896 and ultimately lay the organizational foundation for the first Philippine Republic.</p>
+		</div>
+	</div>
+
+	<div class="container3">
+		<h1>Rizal's Influence</h1>
+
+		<div class="flip-card2">
+  		<div class="flip-card-inner2">
+    		<div class="card-front2">
+      		<h1>The Influence of Rizal’s Execution</h1>
+      		<h3>If Rizal's writings provided the intellectual foundation of Filipino nationalism, his trial and execution on December 30, 1896, at Bagumbayan provided its emotional turning point.</h3>
+      		<ul>
+      			<li>Validation of the Revolutionary Cause</li>
+      			<li>Unifying the Revolutionary Movement</li>
+      			<li>Loss of Spanish Moral Authority</li>
+      			
+      		</ul>
+    		</div>
+    		<div class="card-back2">
+ 			<ul>
+      			<li>Validation of the Revolutionary Cause<br>
+      				When Spanish authorities executed Rizal on false charges of organizing the Katipunan rebellion, it backfired catastrophically. Instead of quelling the uprising, his martyrdom proved to the public that peaceful reform within the Spanish colonial framework was impossible.
+      			</li>
+      			<br>
+      			<li>Unifying the Revolutionary Movement<br>
+      				Rizal’s death turned him into an immediate symbol of sacrifice and resistance. Katipuneros used his name as a password and battle cry, and his image hung in revolutionary headquarters. His final poem, "Mi Último Adiós", copied and distributed secretly across the provinces, deeply moved the populace and solidified their resolve to fight for independence.
+      			</li>
+      			<br>
+      			<li>Loss of Spanish Moral Authority<br>
+      				The public execution of a peaceful scholar, physician, and author alienated moderate Filipinos and international observers alike, stripping the Spanish colonial government of its remaining moral legitimacy.
+      			</li>
+      				
+      		</ul>
+    		</div>
+  		</div>
+		</div>
+
+		<div class="flip-card3">
+  		<div class="flip-card-inner3">
+    		<div class="card-front3">
+      		<h1>The Influence of Rizal’s Writings</h1>
+      		<h3>Rizal’s writings transformed how Filipinos viewed themselves and their relationship with the Spanish empire, shifting the collective mindset from regional isolation to a unified national identity.</h3>
+      		<ul>
+      			<li>Exposing Systemic Oppression</li>
+      			<li>Reclaiming Indigenous History</li>
+      			<li>Deconstructing Colonial Stereotypes</li>
+      			<li>Fostering a Unified National Identity</li>
+      		</ul>
+    		</div>
+    		<div class="card-back3">
+ 			<ul>
+      			<li>Exposing Systemic Oppression<br>
+      				Through his masterwork novels, Rizal held up a mirror to colonial society. He exposed the rampant corruption of Spanish colonial administrators and friars, the abuses of the Guardia Civil, and the social cancers plaguing Filipino society. By depicting recognizable, relatable struggles, he showed Filipinos across different islands that they suffered under a shared system of oppression.
+      			</li>
+      			<br>
+      			<li>Reclaiming Indigenous History<br>
+      				Rizal spent months annotating Antonio de Morga’s 1609 text Sucesos de las Islas Filipinas. His annotations proved that native Filipinos possessed a rich culture, advanced trade systems, and functional governance prior to Spanish colonization, directly refuting the colonial narrative that Spain brought civilization to a "barbaric" people.
+      			</li>
+      			<br>
+      			<li>Deconstructing Colonial Stereotypes<br>
+      				Rizal systematically dismantled the Spanish trope that Filipinos were inherently lazy. He argued that any perceived indolence was a rational response to economic exploitation, lack of incentives, and oppressive governance, shifting the blame from native character to structural injustice.
+      			</li>
+      			<br>
+      			<li>Fostering a Unified National Identity<br>
+      				Before Rizal, inhabitants of the archipelago identified primarily by region as Tagalogs, Ilocanos, Cebuanos, or Kapampangans. His writings popularized the term "Filipino" to refer to all native inhabitants of the islands, binding them under a single national banner.
+      			</li>
+      		</ul>
+    		</div>
+  		</div>
+		</div>
+
+	</div>
+
+	<div class="container4">
+		<center><h1>Did you know?</h1></center>
+		<p>Dr. José Rizal opposed the 1896 revolution because he believed it was premature, ill-prepared, and lacking the weapons and strategy needed to succeed without devastating casualties. He insisted that true independence required an educated and civic-minded populace first, warning that freedom without enlightenment would only lead to internal chaos. In contrast, Andrés Bonifacio and the Katipunan recognized that centuries of colonial abuse and Spain’s rejection of peaceful reform left no legal path forward. Driven by urgency after their secret society was exposed in August 1896, the revolutionaries mobilized a grassroots armed uprising. Thus, while Rizal provided the intellectual spark and moral framework for national identity, the revolutionaries translated that consciousness into immediate military action to overthrow colonial rule by force.</p>
+	</div>
 </body>
 </html>
