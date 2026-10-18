@@ -30,72 +30,134 @@
 		float: left;
 	}
 
-	.cards-container {
-            width: 1500px;
-            margin: 0 auto;
-            white-space: nowrap;
-        }
+    .container1{
+        background-image: url("rizalexilec1bg.png");
+        background-repeat: no-repeat;
+        margin-top: 10px;
+        margin-left: -10px;
+        height: 700px;
+        width: 1600px;
+        background-size: 1600px 700px;
+    }
 
-        .card {
-            display: inline-block;
-            vertical-align: top;
-            width: 280px;
-            height: 380px;
-            margin-right: 20px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            box-sizing: border-box;
-            white-space: normal;
-        }
+	.container1 h1{
+        margin-top: 0px;
+        text-align: center;
+        font-size: 40px;
+        padding-top: 50px;
+    }
+    
+    .paper img{
+        width: 1200px;
+        height: 500px;
+        padding-top: 30px;
+        padding-left: 200px;
 
-        .card:last-child {
-            margin-right: 0px;
-        }
+    }
 
-        .card-header {
-            height: 160px;
-            background-color: #800000;
-            color: #ffffff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            font-weight: bold;
-        }
+    .paper pre{
+        margin-top: -350px;
+        font-size: 20px;
+        text-align: center;
+        margin-left: -130px;
+        
+    }
 
-        .card-body {
-            padding: 20px;
-        }
+    .container2{
+        background-image: url("rizalexilec2bg.jpg");
+        background-repeat: no-repeat;
+        background-size: 1600px 700px;
+        height: 700px;
+        width: 1600px;
+        margin-left: -10px;
+    }
 
-        .card-title {
-            margin: 0 0 10px 0;
-            font-size: 18px;
-            color: #333333;
-        }
+    .container2 h1{
+        margin-top: 0px;
+        padding-left: 150px;
+        padding-top: 50px;
+    }
 
-        .card-text {
-            margin: 0 0 20px 0;
-            font-size: 14px;
-            color: #666666;
-            line-height: 1.5;
-        }
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        padding-top: 50px;
+    }
 
-        .card-button {
-            display: inline-block;
-            padding: 10px 16px;
-            background-color: #800000;
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 4px;
-            font-size: 14px;
-            font-weight: 500;
-        }
+    .card {
+        background-color: transparent;
+        width: 250px;
+        height: 350px;
+        perspective: 1000px;
+        cursor: pointer;
+    }
 
-        .card-button:hover {
-            background-color: #111111;
-        }
+    .card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        border-radius: 15px;
+    }
+
+    .card:hover .card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .card-front, .card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .card-front {
+        background-image: url("rizalexilecardbg.jpg");
+        color: #00e5ff;
+        border: 1px solid rgba(0, 229, 255, 0.2);
+    }
+
+    .card-front h3 {
+        margin: 0;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: black;
+    }
+
+    .card-front p {
+        font-size: 0.9rem;
+        opacity: 0.7;
+    }
+
+    .card-back {
+        background-image: url("rizalexilecardbackbg.jpg");
+        transform: rotateY(180deg);
+        border: 1px solid rgba(0, 229, 255, 0.4);
+    }
+
+    .card-back p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        color: black;
+    }
+
+    
+    
 </style>
 <body>
 	<nav class="navi">
@@ -107,74 +169,83 @@
 		</ul>
 	</nav>
 
-	<div class="cards-container">
+<div class="container1">
+	<h1>From Manila to Mindanao: The Reasons Behind Rizal’s 1892–1896 Dapitan Exile</h1>
+
+    <div class="paper">
+        <img src="rizelexilec1paper.jpg">
+        <pre>Dr. José Rizal was exiled to Dapitan from July 1892 to July 1896 because Spanish
+            colonial authorities viewed his reformist writings
+            and political activities as a direct threat to Spanish sovereignty and the Catholic Church.
+            Following his return to Manila and the founding of La Liga Filipina, Governor-General Eulogio Despujol
+            ordered his arrest when subversive, anti-clerical leaflets titled "Pobres Frailes" were allegedly found
+            in his sister's luggage. Citing these handbills alongside his anti-colonial novels, Noli Me Tángere and
+            El Filibusterismo, the Spanish government charged Rizal with treason and anti-religious subversion,
+            banishing him to remote Mindanao to neutralize his political influence and silence the reform movement.</pre>
+    </div>
+
+</div>
+
+<div class="container2">
+    
+    <h1>Rizal's Contributions</h1>
+
+    <div class="card-container">
         
         <div class="card">
-            <div class="card-header">
-                Figure 01
-            </div>
-            <div class="card-body">
-                <h3 class="card-title">José Rizal</h3>
-                <p class="card-text">
-                    Chief contributor and intellectual visionary who provided historical and moral analysis for the movement.
-                </p>
-                <a href="#" class="card-button">Read Bio</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-header">
-                Figure 02
-            </div>
-            <div class="card-body">
-                <h3 class="card-title">Marcelo H. del Pilar</h3>
-                <p class="card-text">
-                    Master strategist and second editor-in-chief who sustained the publication through political networking.
-                </p>
-                <a href="#" class="card-button">Read Bio</a>
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Education</h3>
+                    
+                </div>
+                <div class="card-back">
+                    <p>Practical Curriculum: Rather than relying solely on rote learning, he taught subjects including reading, writing, geography, history, mathematics, Spanish, English, vocational skills, and moral character.</p>
+                    
+                </div>
             </div>
         </div>
 
         <div class="card">
-            <div class="card-header">
-                Figure 03
-            </div>
-            <div class="card-body">
-                <h3 class="card-title">Graciano López Jaena</h3>
-                <p class="card-text">
-                    Premier orator and founder who served as the first editor-in-chief of La Solidaridad in Barcelona.
-                </p>
-                <a href="#" class="card-button">Read Bio</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-header">
-                Figure 04
-            </div>
-            <div class="card-body">
-                <h3 class="card-title">La Solidaridad</h3>
-                <p class="card-text">
-                    The official bi-weekly newspaper that served as the primary mouthpiece for peaceful colonial reforms.
-                </p>
-                <a href="#" class="card-button">Learn More</a>
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Medicine</h3>
+                   
+                </div>
+                <div class="card-back">
+                    <p>Ophthalmic Surgery: As a trained ophthalmologist, he performed successful eye surgeries, including operating on his mother, Doña Teodora Alonso, to restore her vision.</p>
+                    
+                </div>
             </div>
         </div>
 
         <div class="card">
-            <div class="card-header">
-                Figure 05
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Agriculture</h3>
+                    
+                </div>
+                <div class="card-back">
+                    <p>Modern Farming Techniques: He introduced modern agricultural methods and equipment imported from the United States, encouraging local farmers to move away from primitive practices.</p>
+                    
+                </div>
             </div>
-            <div class="card-body">
-                <h3 class="card-title">La Liga Filipina</h3>
-                <p class="card-text">
-                    A mutual-aid civic organization founded in Manila to promote economic unity, protection, and social reform.
-                </p>
-                <a href="#" class="card-button">Learn More</a>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Community Development</h3>
+                    
+                </div>
+                <div class="card-back">
+                    <p>Town Waterworks System: Utilizing his background in land surveying and civil engineering, Rizal designed and built a functional gravity-driven waterworks system using bamboo, bricks, and mortar to deliver clean water to the town.</p>
+                    
+                </div>
             </div>
         </div>
 
     </div>
 
+</div>
 </body>
 </html>
