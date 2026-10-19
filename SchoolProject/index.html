@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rizal's Legacy in the Digital Age</title>
+</head>
+<style>
+
+	.navi{
+		position: fixed;
+		top: 0px;
+		width: 1600px;
+		z-index: 1000;
+	}
+
+	.navi ul{
+		list-style-type: none;
+		background-color: darkred;
+		padding: 0px;
+		margin: -10px;
+		overflow: hidden;
+	}
+
+	.navi a{
+		color: white;
+		text-decoration: none;
+		padding: 15px;
+		display: block;
+		text-align: center;
+	}
+
+	.navi a:hover{
+		background-color: black;
+	}
+
+	.navi li{
+		float: left;
+	}
+
+	.container1 {
+		margin-top: 10px;
+		margin-left: -10px;
+		margin-right: -10px;
+		background-image: url("Propagandabg.jpg");
+		height: 750px;
+		width: auto;
+	}
+
+	.container1 h1{
+		margin: 0px;
+		padding-top: 20px;
+		text-align: center;
+		font-size: 40px;
+	}
+
+	.photocard img{
+		height: 600px;
+		width: 400px;
+		padding-top: 50px;
+		padding-left: 25px;
+	}
+
+	.paper img{
+		height: 500px;
+		width: 1080px;
+		padding-left: 450px;
+		padding-bottom: -350px;
+		margin-top: -1000px;
+		margin-bottom: 70px;
+		margin-left: 20px;
+	}
+
+	.paper p{
+		margin-top: -530px;
+		padding-left: 490px;
+		font-size: 35px;
+	}
+
+	.container2{
+		background-image: url("container2 bg.png");
+		background-repeat: no-repeat;
+		background-size: 1600px 800px;
+		height: 800px;
+		width: 1600px;
+	}
+
+	.flip-card{
+  		background-color: transparent;
+		width: 300px;
+		height: 300px;
+		perspective: 1000px;
+		padding-left: 1150px; 
+		padding-top: 350px;
+	}
+
+	.flip-card-inner{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		transition: transform 0.8s;
+		transform-style: preserve-3d;
+	}
+
+	.flip-card-inner:hover{
+		transform: rotateY(180deg);
+	}
+
+	.card-front, .card-back{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		-webkit-backface-visibility: hidden; 
+		backface-visibility: hidden;
+		
+		box-sizing: border-box;
+	}
+
+	.card-front{
+		background-image: url("lopezjaena.jpg");
+		background-repeat: no-repeat;
+		background-size: 300px 300px;
+		color: black;
+	}
+
+	.card-back{
+		background-image: url("cardp1bg.jpg");
+		background-size: 300px 300px;
+		color: white;
+		transform: rotateY(180deg);
+	}
+
+	.card-back h2{
+		color: black;
+		padding-top: 10px;
+	}
+
+	.card-back p{
+		color: black;
+		font-size: 20px;
+	}
+
+	.flip-card2{
+  		background-color: transparent;
+		width: 300px;
+		height: 300px;
+		perspective: 1000px;
+		padding-left: 650px;
+		margin-top: -300px;
+	}
+
+	.flip-card-inner2{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		transition: transform 0.8s;
+		transform-style: preserve-3d;
+	}
+
+	.flip-card-inner2:hover{
+		transform: rotateY(180deg);
+	}
+
+	.card-front2, .card-back2{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		-webkit-backface-visibility: hidden; 
+		backface-visibility: hidden;
+		box-sizing: border-box;
+	}
+
+	.card-front2{
+		background-image: url("marcelopilar.jpg");
+		background-repeat: no-repeat;
+		background-size: 300px 300px;
+		color: black;
+	}
+
+	.card-back2{
+		background-image: url("cardp1bg.jpg");
+		background-size: 300px 300px;
+		color: white;
+		transform: rotateY(180deg);
+	}
+
+	.card-back2 h2{
+		color: black;
+		padding-top: 10px;
+	}
+
+	.card-back2 p{
+		color: black;
+		font-size: 20px;
+
+	}.flip-card3{
+  		background-color: transparent;
+		width: 300px;
+		height: 300px;
+		perspective: 1000px;
+		padding-left: 150px;
+		margin-top: -300px;
+	}
+
+	.flip-card-inner3{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		transition: transform 0.8s;
+		transform-style: preserve-3d;
+	}
+
+	.flip-card-inner3:hover{
+		transform: rotateY(180deg);
+	}
+
+	.card-front3, .card-back3{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		-webkit-backface-visibility: hidden; 
+		backface-visibility: hidden;
+		box-sizing: border-box;
+	}
+
+	.card-front3{
+		background-image: url("joserizal.jpg");
+		background-repeat: no-repeat;
+		background-size: 300px 300px;
+		color: black;
+	}
+
+	.card-back3{
+		background-image: url("cardp1bg.jpg");
+		background-size: 300px 300px;
+		color: white;
+		transform: rotateY(180deg);
+	}
+
+	.card-back3 h2{
+		color: black;
+		padding-top: 10px;
+	}
+
+	.card-back3 p{
+		color: black;
+		font-size: 20px;
+	}
+
+	.container3{
+		background-image: url("container3 bg.png");
+		background-size: 1600px 1000px;
+		height: 1000px;
+		width: 1600px;
+
+	}
+
+	.container3 h1{
+		margin: 0px;
+		text-align: center;
+		padding-top: 30px;
+	}
+
+	.container3 img{
+		padding-top: 40px;
+		padding-left: 60px;
+		height: 300px;
+		width: 500px;
+	}
+
+	.container3 p{
+		font-size: 21px;
+		margin-top: -260px;
+		padding-left: 580px;
+	}
+
+	.container3 hr{
+		margin-top: 150px;
+		border: none;
+	    height: 2px;
+	    background-color: #333;
+	    width: 100%;
+	    
+	}
+
+	.cards-container {
+        width: 1280px;
+        margin: 0 50px;
+        white-space: nowrap;
+        padding-top: 50px;
+
+    }
+
+    .card {
+        display: inline-block;
+        vertical-align: top;
+   	    width: 350px;
+        height: 380px;
+        margin-right: 20px;
+        background-image: url("cardp1c3bg.jpg");
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        box-sizing: border-box;
+        white-space: normal;
+    }
+
+    .card:last-child {
+        margin-right: 0px;
+        }
+
+    .card-header {
+        height: 90px;
+        background-color: #800000;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .card-header h2{
+    	font-size: 20px;
+    	text-align: center;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-title {
+	    margin: 0 0 10px 0;
+	    font-size: 18px;
+	    color: #333333;
+    }
+
+    .card-text {
+        margin: 0 0 20px 0;
+        font-size: 14px;
+        color: #666666;
+        line-height: 1.5;
+    }
+
+</style>
+<body>
+	<nav class="navi">
+		<ul>
+			<li><a href="index.html">Propaganda Movement</a></li>
+			<li><a href="LaLigaFilipinaPage.html">La Liga Filipina</a></li>
+			<li><a href="Rizal'sExilePage.html">Rizal's Exile</a></li>
+			<li><a href="PhilippineRevolutionPage.html">Philippine Revolution</a></li>
+			<li><a href="conclusionpage.html">Conclusion</a></li>
+		</ul>
+	</nav>
+
+	<div class="container1">
+		<h1>Propaganda Movement</h1>
+
+		<div class="photocard">
+		<img src="Barcelona.jpg">
+		</div>
+
+		<div class="paper">
+			<img src="Container1 bg.jpg">
+			<p>The Propaganda Movement was a reform and national consciousness<br> movement that arose among young Filipino expatriates in the late 19th century.<br>
+			<br>These students, the sons of wealthy families, were sent to Europe to study,<br> where they were exposed to more liberal ideas and developed a sense of Filipino identity.
+			</p>
+		</div>
+	</div>
+
+	<div class="container2">
+		<div class="flip-card">
+  		<div class="flip-card-inner">
+    		<div class="card-front">
+      		
+    		</div>
+    		<div class="card-back">
+ 			<h2>Graciano Lopez Jaena</h2>
+ 			<p>Role in La Solidaridad:<br> Founder and First Editor-in-Chief</p>
+    		</div>
+  		</div>
+		</div>
+
+		<div class="flip-card2">
+  		<div class="flip-card-inner2">
+    		<div class="card-front2">
+      		
+    		</div>
+    		<div class="card-back2">
+ 			<h2>Marcelo del Pilar</h2>
+ 			<p>Role in La Solidaridad:<br> Second Editor-in-Chief</p>
+    		</div>
+  		</div>
+		</div>
+
+		<div class="flip-card3">
+  		<div class="flip-card-inner3">
+    		<div class="card-front3">
+      		
+    		</div>
+    		<div class="card-back3">
+ 			<h2>Jose P. Rizal</h2>
+ 			<p>Role in La Solidaridad:<br> Chief Contributor and Honorary President of La Solidaridad</p>
+    		</div>
+  		</div>
+		</div>
+	</div>
+
+	<div class="container3">
+		<h1>Role of La Solidaridad</h1>
+		<img src="container3 paperight.jpg">
+		<p>La Solidaridad served as the official mouthpiece of the Propaganda Movement, providing Filipino<br> ilustrados with a platform to campaign for peaceful reforms in the Philippines. Published in Spain<br> to bypass colonial censorship, the newspaper targeted Spanish liberals with demands for equal civil rights,<br> parliamentary representation, and an end to friar abuses. Key figures like José Rizal, Marcelo H. del Pilar,<br> and Graciano López Jaena used its pages to defend Filipino dignity, debunk racial stereotypes, and forge a unified<br> national identity.Though its ultimate failure to secure reform led to its closure in 1895, the paper’s rejection<br> convinced many that peaceful channels were exhausted, directly sparking the Katipunan revolution for complete independence.</p>
+
+		<hr>
+
+	<div class="cards-container">
+        <div class="card">
+            <div class="card-header">
+               	<h2>Exposing Colonial and Friar Abuses</h2>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Through articles in La Solidaridad and satirical pamphlets such as Del Pilar's Dasalan at Tocsohan, the reformists documented real world misrule exposing friar corruption, excessive taxation, and forced labor to the Spanish public and government.</h3>
+                
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+               	<h2>Demanding Legal and Political Reforms</h2>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Journalists published structured proposals advocating for peaceful, systemic changes rather than violence specifically demanding legal equality between Filipinos and Spaniards, freedom of speech, and seats for Filipino delegates in the Spanish parliament</h3>
+                
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2>Defending Filipino Dignity and Capability</h2>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Through historical and analytical essays such as Rizal's "The Indolence of the Filipino", the writers systematically disproved Spanish claims that Filipinos were naturally lazy or inferior, demonstrating that Filipinos were educated and fully capable of civic leadership.</h3>
+                
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2>Awakening a Shared Filipino National Identity</h2>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">Even though reformist writings were banned in the Philippines, smuggled issues of La Solidaridad, novels, and pamphlets were passed around secret reading circles, unifying regional populations into a single, conscious Filipino nation.</h3>
+                
+            </div>
+        </div>
+
+    </div>
+
+	</div>
+</body>
+</html>
